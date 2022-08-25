@@ -24,6 +24,7 @@ public class LC383 {
                 return false;
             }
         }
+
         return true;
     }
 }
