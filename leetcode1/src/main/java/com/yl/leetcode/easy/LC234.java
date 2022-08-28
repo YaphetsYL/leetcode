@@ -34,9 +34,11 @@ public class LC234 {
         }
 
         ListNode prev = slow;
-        ListNode temp;
         slow = slow.next;
+        // the sequence matters
         prev.next = null;
+        ListNode temp;
+
         while (slow != null) {
             temp = slow.next;
             slow.next = prev;
@@ -54,7 +56,6 @@ public class LC234 {
         }
         return true;
     }
-
 
 }
 
