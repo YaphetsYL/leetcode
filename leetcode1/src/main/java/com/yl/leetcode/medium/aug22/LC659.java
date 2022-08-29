@@ -15,7 +15,8 @@ public class LC659 {
     public boolean isPossible(int[] nums) {
 
 
-        Map<Integer, Integer> freq = new HashMap<>(), appendfreq = new HashMap<>();
+        Map<Integer, Integer> freq = new HashMap<>();
+        Map<Integer, Integer> appendfreq = new HashMap<>();
         for (int i : nums) {
             freq.put(i, freq.getOrDefault(i, 0) + 1);
         }

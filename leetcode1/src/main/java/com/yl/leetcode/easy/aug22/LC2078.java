@@ -14,7 +14,8 @@ package com.yl.leetcode.easy.aug22;
 public class LC2078 {
     public int maxDistance(int[] colors) {
 
-        int res = 0, n = colors.length;
+        int res = 0;
+        int n = colors.length;
         for (int i = 0; i < n; ++i) {
             if (colors[i] != colors[0]) {
                 res = Math.max(res, i);

@@ -32,7 +32,10 @@ public class LC871 {
             return 0;
         }
         Queue<Integer> queue = new PriorityQueue<>((a, b) -> b - a);
-        int i = 0, n = stations.length, stops = 0, maxDistance = startFuel;
+        int i = 0;
+        int n = stations.length;
+        int stops = 0;
+        int maxDistance = startFuel;
         while (maxDistance < target) {
             while (i < n && stations[i][0] <= maxDistance) {
                 queue.offer(stations[i++][1]);

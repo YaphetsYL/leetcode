@@ -27,7 +27,8 @@ class ListNode {
 
 public class LC234 {
     public boolean isPalindrome(ListNode head) {
-        ListNode fast = head, slow = head;
+        ListNode fast = head;
+        ListNode slow = head;
         while (fast != null && fast.next != null) {
             fast = fast.next.next;
             slow = slow.next;
