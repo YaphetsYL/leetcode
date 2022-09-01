@@ -13,7 +13,7 @@ package com.yl.leetcode.easy.sep22;
 public class LC766 {
     public boolean isToeplitzMatrix(int[][] matrix) {
 
-        for (int i = 0; i < matrix.length-1; i++) {
+        for (int i = 0; i < matrix.length - 1; i++) {
             for (int j = 0; j < matrix[i].length - 1; j++) {
                 if (matrix[i][j] != matrix[i + 1][j + 1]) {
                     return false;

@@ -8,22 +8,6 @@ package com.yl.leetcode.easy.aug22;
  * Given the head of a singly linked list, return true if it is a palindrome.
  */
 
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode() {
-    }
-
-    ListNode(int val) {
-        this.val = val;
-    }
-
-    ListNode(int val, ListNode next) {
-        this.val = val;
-        this.next = next;
-    }
-}
 
 public class LC234 {
     public boolean isPalindrome(ListNode head) {
@@ -56,6 +40,23 @@ public class LC234 {
             slow = slow.next;
         }
         return true;
+    }
+
+    private class ListNode {
+        int val;
+        ListNode next;
+
+        ListNode() {
+        }
+
+        ListNode(int val) {
+            this.val = val;
+        }
+
+        ListNode(int val, ListNode next) {
+            this.val = val;
+            this.next = next;
+        }
     }
 
 }
